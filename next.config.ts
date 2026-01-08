@@ -1,8 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "hwztchapter.dramaboxdb.com",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
