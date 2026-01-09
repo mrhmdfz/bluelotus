@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -7,4 +7,8 @@
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.bg-primary {
+  @apply fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(245,158,11,0.08),_transparent_60%)];
 }

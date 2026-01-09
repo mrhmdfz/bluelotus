@@ -1,6 +1,6 @@
 export type PlayCardProps = {
   bookId?: number;
   bookName: string;
-  chapterCount: number;
+  chapterCount?: number;
   cover: string;
 };

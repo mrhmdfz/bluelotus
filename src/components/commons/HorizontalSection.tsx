@@ -1,8 +1,7 @@
 "use client";
-
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import PlayCard from "@/components/PlayCard";
+import PlayCard from "@/components/commons/PlayCard";
 import { PlayCardProps } from "@/types/play-card";
 
 export default function HorizontalSection({

@@ -50,8 +50,9 @@ export default function PlayCard(props: PlayCardProps) {
         {bookName}
       </div>
 
-      <div
-        className="
+      {chapterCount && (
+        <div
+          className="
           absolute right-2 top-2 z-10
           bg-black/60 backdrop-blur
           rounded-full
@@ -60,10 +61,11 @@ export default function PlayCard(props: PlayCardProps) {
           flex items-center gap-1
           text-white
         "
-      >
-        <PlayIcon size={12} />
-        {chapterCount} Eps
-      </div>
+        >
+          <PlayIcon size={12} />
+          {chapterCount} Eps
+        </div>
+      )}
     </Link>
   );
 }

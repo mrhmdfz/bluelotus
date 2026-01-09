@@ -6,7 +6,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const bookId = searchParams.get("bookId");
     const res = await axios.get(
-      `https://restxdb.onrender.com/api/chapters/${bookId}?lang=in`
+      `${process.env.REST_API}/api/chapters/${bookId}?lang=in`
     );
     if (!res.data?.success) {
       return NextResponse.json(

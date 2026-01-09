@@ -17,3 +17,10 @@ export async function getPopularRanking() {
   if (!res.data.success) throw new Error("Fetch failed");
   return res.data;
 }
+
+export async function getDramaDetail(bookId: string) {
+  if (!bookId) throw new Error("bookId is required");
+  const res = await axios.get(`/api/detail?bookId=${bookId}`);
+  if (!res.data?.success) throw new Error("Fetch failed");
+  return res.data.data;
+}

@@ -21,19 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en">
       <body
         className={`
           ${fontJakarta.className}
           min-h-screen
           antialiased
-          bg-gradient-to-br
+          bg-linear-to-br
           from-black
           via-zinc-900
           to-black
         `}
       >
-        <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(245,158,11,0.08),_transparent_60%)]" />
+        <div className="bg-primary" />
         <main className="px-4 sm:px-6 md:px-10 lg:px-24 py-5">{children}</main>
       </body>
     </html>
