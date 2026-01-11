@@ -59,7 +59,7 @@ export default function HorizontalSection({
                 : "opacity-0 pointer-events-none"
             }`}
         >
-          <ChevronLeft />
+          <ChevronLeft className="text-white" />
         </button>
 
         <button
@@ -72,7 +72,7 @@ export default function HorizontalSection({
                 : "opacity-0 pointer-events-none"
             }`}
         >
-          <ChevronRight />
+          <ChevronRight className="text-white" />
         </button>
 
         <div
